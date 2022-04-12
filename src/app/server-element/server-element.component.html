@@ -1,0 +1,12 @@
+<div
+    class="card bg-dark mb-3"
+    style="max-width: 18rem;">
+
+    <h5 class="card-header bg-light text-dark">{{ element.name }}</h5>
+      <div class="card-body">
+        <p class="card-text">
+          <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+          <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+        </p>
+      </div>
+  </div>
